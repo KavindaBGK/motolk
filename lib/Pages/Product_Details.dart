@@ -20,12 +20,6 @@ class ProductDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(imageUrl);
-    print(price);
-    print(discount);
-    print(title);
-    print(additionalImages);
-    print(deliveryDate);
     return Scaffold(
       appBar: AppBar(
         title: Text("Product Details"),

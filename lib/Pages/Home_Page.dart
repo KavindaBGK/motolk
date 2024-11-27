@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../Components/Home_Container.dart';
 import '../Components/Product_Card.dart';
+import '../Components/Vehicle_Type_Container.dart';
 import '../Components/catagort.dart';
 import '../Providers/Product_Data.dart';
 import 'Category_Products_Page.dart';
@@ -16,6 +19,64 @@ const List<Map<String, String>> categories = [
   {"image": "assets/images/en.jpg", "name": "Engine Parts"},
   {"image": "assets/images/en.jpg", "name": "Engine Parts"},
   {"image": "assets/images/en.jpg", "name": "Engine Parts"},
+];
+
+final List<Map<String, String>> vehicles = [
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Motor Car",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/bodyparts.jpg",
+    "title": "Bus",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Van",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Cab",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/bodyparts.jpg",
+    "title": "Tipper",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "SUV",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Lorry",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/bodyparts.jpg",
+    "title": "Three Wheel",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Tractor",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/engin.jpg",
+    "title": "Heavy-Deuty",
+    "buttonText": "Buy Now",
+  },
+  {
+    "backgroundImage": "assets/images/bodyparts.jpg",
+    "title": "Motorcycle",
+    "buttonText": "Buy Now",
+  },
 ];
 
 class HomeScreen extends StatelessWidget {
@@ -105,7 +166,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
-
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
@@ -121,6 +181,54 @@ class HomeScreen extends StatelessWidget {
                             },
                           ),
                           const SizedBox(height: 25),
+                          Padding(
+                            padding:
+                                const EdgeInsets.symmetric(horizontal: 16.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                const Text(
+                                  'Vehicle Type',
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    // Action for "See all"
+                                    print("See all categories pressed");
+                                  },
+                                  child: const Text(
+                                    'See all',
+                                    style: TextStyle(
+                                        fontSize: 14, color: Colors.blue),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 2),
+                            child: SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              child: Row(
+                                children: vehicles.map((vehicle) {
+                                  return VehicleTypeContainer(
+                                    backgroundImage:
+                                        vehicle["backgroundImage"]!,
+                                    title: vehicle["title"]!,
+                                    buttonText: vehicle["buttonText"]!,
+                                    onButtonPressed: () {
+                                      print(
+                                          "${vehicle['title']} button clicked");
+                                    },
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 16.0),
