@@ -1,26 +1,51 @@
+import 'dart:async';
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
-class ReusableContainer extends StatelessWidget {
-  final String backgroundImage;
-  final String title;
-  final String buttonText;
-  final VoidCallback onButtonPressed;
+class ReusableContainer extends StatefulWidget {
+  final List<Map<String, dynamic>> data; // List of data from JSON
 
-  const ReusableContainer({
-    required this.backgroundImage,
-    required this.title,
-    required this.buttonText,
-    required this.onButtonPressed,
-  });
+  const ReusableContainer({required this.data, Key? key}) : super(key: key);
+
+  @override
+  State<ReusableContainer> createState() => _ReusableContainerState();
+}
+
+class _ReusableContainerState extends State<ReusableContainer> {
+  int _currentIndex = 0;
+  late Timer _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _startTimer();
+  }
+
+  @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
+  void _startTimer() {
+    _timer = Timer.periodic(const Duration(seconds: 4), (timer) {
+      setState(() {
+        _currentIndex = (_currentIndex + 1) % widget.data.length;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
+    final currentItem = widget.data[_currentIndex];
+
     return Container(
       height: 200,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         image: DecorationImage(
-          image: AssetImage(backgroundImage),
+          image: AssetImage(currentItem['backgroundImage']),
           fit: BoxFit.cover,
         ),
       ),
@@ -43,23 +68,25 @@ class ReusableContainer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  title,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                  currentItem['title'],
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 ElevatedButton(
-                  onPressed: onButtonPressed,
+                  onPressed: currentItem['onButtonPressed'] ?? () {},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    minimumSize: const Size(70, 40),
                   ),
-                  child: Text(buttonText),
-                ),
+                  child: Text(currentItem['buttonText']),
+                )
               ],
             ),
           ),

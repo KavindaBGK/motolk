@@ -32,7 +32,7 @@ class VehicleTypeContainer extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              bottom: 20,
+              bottom: 15,
               left: 10,
               right: 10,
               child: Column(

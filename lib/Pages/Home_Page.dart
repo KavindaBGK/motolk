@@ -1,6 +1,7 @@
-import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:motolk/Pages/Vehicle_Products_Page.dart';
 import 'package:provider/provider.dart';
 
 import '../Components/Home_Container.dart';
@@ -8,6 +9,7 @@ import '../Components/Product_Card.dart';
 import '../Components/Vehicle_Type_Container.dart';
 import '../Components/catagort.dart';
 import '../Providers/Product_Data.dart';
+import '../Providers/Vehical_Type.dart';
 import 'Category_Products_Page.dart';
 import 'Product_Details.dart';
 
@@ -21,71 +23,44 @@ const List<Map<String, String>> categories = [
   {"image": "assets/images/en.jpg", "name": "Engine Parts"},
 ];
 
-final List<Map<String, String>> vehicles = [
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Motor Car",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/bodyparts.jpg",
-    "title": "Bus",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Van",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Cab",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/bodyparts.jpg",
-    "title": "Tipper",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "SUV",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Lorry",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/bodyparts.jpg",
-    "title": "Three Wheel",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Tractor",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/engin.jpg",
-    "title": "Heavy-Deuty",
-    "buttonText": "Buy Now",
-  },
-  {
-    "backgroundImage": "assets/images/bodyparts.jpg",
-    "title": "Motorcycle",
-    "buttonText": "Buy Now",
-  },
-];
+const jsonData = '''
+  [
+    {
+      "backgroundImage": "assets/images/engin.jpg",
+      "title": "Cheverolate Doge Alternator",
+      "buttonText": "Buy Now",
+      "onButtonPressed": null
+    },
+    {
+      "backgroundImage": "assets/images/oil.jpg",
+      "title": "50% Offer from our Store",
+      "buttonText": "Shop Now",
+      "onButtonPressed": null
+    },
+    {
+      "backgroundImage": "assets/images/brackpad.jpg",
+      "title": "Brake Pads Discount",
+      "buttonText": "Order Now",
+      "onButtonPressed": null
+    }
+  ]
+  ''';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextEditingController _searchController = TextEditingController();
+    final List<Map<String, dynamic>> parsedData =
+        (json.decode(jsonData) as List<dynamic>)
+            .map((e) => e as Map<String, dynamic>)
+            .toList();
+
     return Scaffold(body:
         Consumer<ProductProvider>(builder: (context, productProvider, child) {
       final products = productProvider.filteredProducts;
+      final vehicleTypeProvider =
+          Provider.of<VehicalTypeProvider>(context, listen: false);
+      final vehicles = vehicleTypeProvider.vehicles;
 
       return Stack(
         children: [
@@ -172,13 +147,7 @@ class HomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ReusableContainer(
-                            backgroundImage:
-                                'assets/images/engin.jpg', // Replace with your asset path
-                            title: 'Cheverolate Doge Alternator',
-                            buttonText: 'Buy Now',
-                            onButtonPressed: () {
-                              // Button action
-                            },
+                            data: parsedData,
                           ),
                           const SizedBox(height: 25),
                           Padding(
@@ -218,10 +187,17 @@ class HomeScreen extends StatelessWidget {
                                     backgroundImage:
                                         vehicle["backgroundImage"]!,
                                     title: vehicle["title"]!,
-                                    buttonText: vehicle["buttonText"]!,
+                                    buttonText: "explore more >>",
                                     onButtonPressed: () {
-                                      print(
-                                          "${vehicle['title']} button clicked");
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              VehicleProductsPage(
+                                                  category:
+                                                      vehicle["vehicle type"]!),
+                                        ),
+                                      );
                                     },
                                   );
                                 }).toList(),

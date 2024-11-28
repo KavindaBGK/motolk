@@ -61,7 +61,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Van"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -73,7 +73,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Van"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -85,7 +85,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Van"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -97,7 +97,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Van"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -109,7 +109,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Bus"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -121,7 +121,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Bus"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -133,7 +133,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Bus"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -145,7 +145,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Bus"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -157,7 +157,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Cab"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -169,7 +169,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Cab"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -181,7 +181,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Cab"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -193,7 +193,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Cab"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -205,7 +205,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tipper"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -217,7 +217,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tipper"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -229,7 +229,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tipper"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -241,7 +241,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tipper"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -253,7 +253,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "SUV"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -265,7 +265,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "SUV"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -277,7 +277,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "SUV"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -289,7 +289,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "SUV"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -301,7 +301,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Lorry"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -313,7 +313,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Lorry"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -325,7 +325,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Lorry"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -337,7 +337,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Lorry"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -349,7 +349,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Three-wheel"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -361,7 +361,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Three-wheel"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -373,7 +373,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Three-wheel"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -385,7 +385,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Three-wheel"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -397,7 +397,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tractor"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -409,7 +409,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tractor"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -421,7 +421,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tractor"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -433,7 +433,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Tractor"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -445,7 +445,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Heavy-Duty"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -457,7 +457,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Heavy-Duty"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -469,7 +469,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Heavy-Duty"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -481,7 +481,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Heavy-Duty"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -493,7 +493,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Motorcycle"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -505,7 +505,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Motorcycle"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -517,7 +517,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Motorcycle"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -529,7 +529,7 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Motorcycle"
     },
   ];
 
