@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'Pages/Home_Page.dart';
+import 'Providers/Catagory_Data.dart';
 import 'Providers/Product_Data.dart';
 import 'Providers/Vehical_Type.dart';
+import 'Providers/Vehicle_Brands.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +18,8 @@ class MyApp extends StatelessWidget {
         // Add your providers here
         ChangeNotifierProvider(create: (context) => ProductProvider()),
         ChangeNotifierProvider(create: (context) => VehicalTypeProvider()),
+        ChangeNotifierProvider(create: (context) => VehicalBrandProvider()),
+        ChangeNotifierProvider(create: (context) => CategoryProvider()),
       ],
       child: MaterialApp(
         title: 'Multi Provider Example',

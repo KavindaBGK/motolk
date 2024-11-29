@@ -13,7 +13,8 @@ class ProductProvider with ChangeNotifier {
       "cartCount": "",
       "discount": "5%",
       "isSale": false,
-      "category": "Body Parts",
+      "Brand": "Audi",
+      "category": "Brakes",
       "vehicle type": "Car"
     },
     {
@@ -36,6 +37,7 @@ class ProductProvider with ChangeNotifier {
       "rating": 4.8,
       "cartCount": "",
       "isSale": false,
+      "Brand": "Honda",
       "category": "Body Parts",
       "vehicle type": "Car"
     },

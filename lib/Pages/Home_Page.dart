@@ -8,21 +8,13 @@ import '../Components/Home_Container.dart';
 import '../Components/Product_Card.dart';
 import '../Components/Vehicle_Type_Container.dart';
 import '../Components/catagort.dart';
+import '../Providers/Catagory_Data.dart';
 import '../Providers/Product_Data.dart';
 import '../Providers/Vehical_Type.dart';
 import 'Category_Products_Page.dart';
 import 'Product_Details.dart';
 
-const List<Map<String, String>> categories = [
-  {"image": "assets/images/bodyparts.jpg", "name": "Body Parts"},
-  {"image": "assets/images/brack.jpg", "name": "Brakes"},
-  {"image": "assets/images/cool.jpg", "name": "Cooling & Heatings"},
-  {"image": "assets/images/en.jpg", "name": "Engine Parts"},
-  {"image": "assets/images/en.jpg", "name": "Engine Parts"},
-  {"image": "assets/images/en.jpg", "name": "Engine Parts"},
-  {"image": "assets/images/en.jpg", "name": "Engine Parts"},
-];
-
+late List<Map<String, String>> categories;
 const jsonData = '''
   [
     {
@@ -61,6 +53,8 @@ class HomeScreen extends StatelessWidget {
       final vehicleTypeProvider =
           Provider.of<VehicalTypeProvider>(context, listen: false);
       final vehicles = vehicleTypeProvider.vehicles;
+      final categories =
+          Provider.of<CategoryProvider>(context, listen: false).categories;
 
       return Stack(
         children: [
@@ -248,7 +242,7 @@ class HomeScreen extends StatelessWidget {
                                         MaterialPageRoute(
                                           builder: (context) =>
                                               CategoryProductsPage(
-                                                  category: category["name"]!),
+                                                  category: category["title"]!),
                                         ),
                                       );
                                     },
