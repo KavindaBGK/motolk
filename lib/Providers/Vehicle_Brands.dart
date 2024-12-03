@@ -24,7 +24,8 @@ class VehicalBrandProvider with ChangeNotifier {
       "Mercedes-Benz",
       "BMW",
       "Volkswagen",
-      "Mazda"
+      "Mazda",
+      "Ford"
     ]
   },
   {

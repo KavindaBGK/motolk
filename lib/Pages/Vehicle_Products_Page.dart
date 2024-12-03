@@ -1,28 +1,12 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../Providers/Catagory_Data.dart';
 import '../Providers/Product_Data.dart';
 import '../Components/Product_Card.dart';
 import '../Providers/Vehicle_Brands.dart';
+import 'package:dropdown_button2/dropdown_button2.dart';
 
-// Define JSON data as constants
-const jsonBrandData = '''
-[
-  "Toyota",
-  "Nissan",
-  "Audi",
-  "Honda"
-]
-''';
-
-const jsonCategoryData = '''
-[
-  "Brakes",
-  "Body Parts",
-  "Brake Parts"
-]
-''';
+import 'Product_Details.dart';
 
 class VehicleProductsPage extends StatefulWidget {
   final String category;
@@ -115,26 +99,63 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          widget.category,
-          style: const TextStyle(color: Colors.white),
+        automaticallyImplyLeading:
+            true, // Enables the back button automatically
+        title: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 300),
+          child: Text(
+            widget.category,
+            key: ValueKey(widget.category),
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white, // Set text color to white
+            ),
+          ),
         ),
-        backgroundColor: const Color.fromARGB(255, 9, 65, 110),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        flexibleSpace: Container(
+          height: 164,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xFF09416E), Color(0xFF0B81C6)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back,
+              color: Colors.white), // Add back arrow
+          onPressed: () {
+            Navigator.pop(context); // Navigate back
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.notifications, color: Colors.white),
+            onPressed: () {
+              // Notification action
+            },
+          ),
+        ],
       ),
       body: Column(
         children: [
-          // Dropdowns and Search Bar in one container
+          // Dropdowns and Search Bar
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Container(
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 300),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 1,
-                    blurRadius: 5,
+                    color: Colors.grey.withOpacity(0.3),
+                    spreadRadius: 3,
+                    blurRadius: 7,
                     offset: const Offset(0, 3),
                   ),
                 ],
@@ -143,12 +164,12 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Dropdowns Row
+                  // Dropdowns
                   Row(
                     children: [
                       // Car Brand Dropdown
                       Expanded(
-                        child: DropdownButtonFormField<String>(
+                        child: DropdownButtonFormField2(
                           isExpanded: true,
                           value: selectedBrand,
                           items: carBrands
@@ -163,12 +184,14 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                               _filterProducts(_searchController.text);
                             });
                           },
-                          decoration: const InputDecoration(
-                            labelText: "Select brand name",
-                            border: OutlineInputBorder(),
-                            contentPadding: EdgeInsets.symmetric(
+                          decoration: InputDecoration(
+                            labelText: "Select brand",
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            contentPadding: const EdgeInsets.symmetric(
                               horizontal: 12,
-                              vertical: 16,
+                              vertical: 14,
                             ),
                           ),
                         ),
@@ -176,7 +199,7 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                       const SizedBox(width: 16),
                       // Category Dropdown
                       Expanded(
-                        child: DropdownButtonFormField<String>(
+                        child: DropdownButtonFormField2(
                           isExpanded: true,
                           value: selectedCategory,
                           items: categories
@@ -191,12 +214,14 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                               _filterProducts(_searchController.text);
                             });
                           },
-                          decoration: const InputDecoration(
+                          decoration: InputDecoration(
                             labelText: "Category",
-                            border: OutlineInputBorder(),
-                            contentPadding: EdgeInsets.symmetric(
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            contentPadding: const EdgeInsets.symmetric(
                               horizontal: 12,
-                              vertical: 16,
+                              vertical: 14,
                             ),
                           ),
                         ),
@@ -205,22 +230,29 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                   ),
                   const SizedBox(height: 16),
                   // Search Bar
-                  Container(
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 300),
                     height: 60,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.grey.shade300),
+                      color: Colors.grey[100],
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.2),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
                     ),
                     child: TextField(
                       controller: _searchController,
                       decoration: const InputDecoration(
-                        hintText: 'Search Spare-parts for buy',
-                        prefixIcon: Icon(Icons.search),
+                        hintText: 'Search spare parts',
+                        prefixIcon: Icon(Icons.search, color: Colors.grey),
                         border: InputBorder.none,
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 20,
-                          horizontal: 17,
+                          horizontal: 16,
                         ),
                       ),
                       onChanged: (query) {
@@ -232,8 +264,7 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
               ),
             ),
           ),
-          const SizedBox(height: 16),
-
+          const SizedBox(height: 10),
           // Product Grid
           Expanded(
             child: filteredProducts.isEmpty
@@ -255,7 +286,28 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                     itemCount: filteredProducts.length,
                     itemBuilder: (context, index) {
                       final product = filteredProducts[index];
-                      return ProductCard(product: product);
+                      return GestureDetector(
+                        onTap: () {
+                          // Handle single tap on the product card
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ProductDetailsPage(
+                                imageUrl: product[
+                                    "imagePath"], // Pass product details
+                                price: product["price"],
+                                discount: product["discount"],
+                                title: product["title"],
+                                additionalImages: [
+                                  product['imagePath']
+                                ], //product.additionalImages
+                                deliveryDate: 'Dec 12 - 26',
+                              ),
+                            ),
+                          );
+                        },
+                        child: ProductCard(product: product),
+                      );
                     },
                   ),
           ),

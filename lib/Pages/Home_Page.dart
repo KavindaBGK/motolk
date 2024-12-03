@@ -1,314 +1,328 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:motolk/Pages/Vehicle_Products_Page.dart';
 import 'package:provider/provider.dart';
-
 import '../Components/Home_Container.dart';
 import '../Components/Product_Card.dart';
 import '../Components/Vehicle_Type_Container.dart';
 import '../Components/catagort.dart';
+import '../Providers/Advertisment_data.dart';
 import '../Providers/Catagory_Data.dart';
 import '../Providers/Product_Data.dart';
 import '../Providers/Vehical_Type.dart';
 import 'Category_Products_Page.dart';
 import 'Product_Details.dart';
 
-late List<Map<String, String>> categories;
-const jsonData = '''
-  [
-    {
-      "backgroundImage": "assets/images/engin.jpg",
-      "title": "Cheverolate Doge Alternator",
-      "buttonText": "Buy Now",
-      "onButtonPressed": null
-    },
-    {
-      "backgroundImage": "assets/images/oil.jpg",
-      "title": "50% Offer from our Store",
-      "buttonText": "Shop Now",
-      "onButtonPressed": null
-    },
-    {
-      "backgroundImage": "assets/images/brackpad.jpg",
-      "title": "Brake Pads Discount",
-      "buttonText": "Order Now",
-      "onButtonPressed": null
-    }
-  ]
-  ''';
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
 
-class HomeScreen extends StatelessWidget {
+class _HomeScreenState extends State<HomeScreen> {
+  final TextEditingController _searchController = TextEditingController();
+  final ScrollController _scrollController = ScrollController();
+  bool _isLoading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    context.read<ProductProvider>().loadInitialProducts();
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels ==
+          _scrollController.position.maxScrollExtent) {
+        _loadMoreData();
+      }
+    });
+  }
+
+  Future<void> _loadMoreData() async {
+    if (!_isLoading) {
+      setState(() {
+        _isLoading = true;
+      });
+
+      await Provider.of<ProductProvider>(context, listen: false)
+          .loadMoreProducts();
+
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    TextEditingController _searchController = TextEditingController();
-    final List<Map<String, dynamic>> parsedData =
-        (json.decode(jsonData) as List<dynamic>)
-            .map((e) => e as Map<String, dynamic>)
-            .toList();
+    return Scaffold(
+      body: Consumer<ProductProvider>(
+        builder: (context, productProvider, child) {
+          final products = productProvider.filteredProducts;
+          final vehicleTypeProvider =
+              Provider.of<VehicalTypeProvider>(context, listen: false);
+          final vehicles = vehicleTypeProvider.vehicles;
+          final categories =
+              Provider.of<CategoryProvider>(context, listen: false).categories;
+          final parsedData =
+              Provider.of<AdvertismentDataProvider>(context, listen: false)
+                  .parsedData;
 
-    return Scaffold(body:
-        Consumer<ProductProvider>(builder: (context, productProvider, child) {
-      final products = productProvider.filteredProducts;
-      final vehicleTypeProvider =
-          Provider.of<VehicalTypeProvider>(context, listen: false);
-      final vehicles = vehicleTypeProvider.vehicles;
-      final categories =
-          Provider.of<CategoryProvider>(context, listen: false).categories;
-
-      return Stack(
-        children: [
-          Container(
-            height: 164,
-            color: Color.fromARGB(255, 9, 65, 110),
-          ),
-          SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          return Stack(
+            children: [
+              Container(
+                height: 169,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFF09416E), Color(0xFF0B81C6)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                ),
+              ),
+              SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            'Hello Keshara!',
-                            style: TextStyle(
-                                fontSize: 24,
-                                color: Colors.white, // Text color for contrast
-                                fontWeight: FontWeight.bold),
+                          const Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                ' Hello Keshara!',
+                                style: TextStyle(
+                                  fontSize: 28,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                ' What do you want to buy?',
+                                style: TextStyle(
+                                    fontSize: 18, color: Colors.white70),
+                              ),
+                            ],
                           ),
-                          Text(
-                            'What do you want to buy?',
-                            style:
-                                TextStyle(fontSize: 16, color: Colors.white70),
+                          IconButton(
+                            icon:
+                                Icon(Icons.notifications, color: Colors.white),
+                            onPressed: () {},
                           ),
                         ],
                       ),
-                      IconButton(
-                        icon: Icon(Icons.notifications, color: Colors.white),
-                        onPressed: () {},
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  // Search Bar
-                  Container(
-                    decoration: BoxDecoration(
-                      color:
-                          Colors.white, // Background color for the search bar
-                      borderRadius:
-                          BorderRadius.circular(12), // Rounded corners
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey
-                              .withOpacity(0.5), // Shadow color with opacity
-                          spreadRadius: 1, // Spread radius of the shadow
-                          blurRadius: 5, // Blur radius for a soft shadow
-                          offset: Offset(0, 3), // Position of the shadow (x, y)
-                        ),
-                      ],
-                    ),
-                    child: SizedBox(
-                      height: 60, // Desired height of the search bar
-                      child: TextField(
-                        controller: _searchController,
-                        decoration: const InputDecoration(
-                          hintText: 'Search Spare-parts for buy',
-                          prefixIcon: Icon(Icons.search),
-                          border:
-                              InputBorder.none, // Removes the default border
-                          contentPadding: EdgeInsets.symmetric(
-                            vertical:
-                                20, // Adjust this for better text alignment
-                            horizontal: 17, // Padding inside the search bar
-                          ),
-                        ),
-                        onChanged: (query) {
-                          // Pass the query to the provider's search method
-                          productProvider.searchProducts(query);
-                        },
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          ReusableContainer(
-                            data: parsedData,
-                          ),
-                          const SizedBox(height: 25),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text(
-                                  'Vehicle Type',
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    // Action for "See all"
-                                    print("See all categories pressed");
-                                  },
-                                  child: const Text(
-                                    'See all',
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.blue),
-                                  ),
-                                ),
-                              ],
+                      const SizedBox(height: 30),
+                      // Search Bar
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        height: 60,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(14),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.2),
+                              blurRadius: 8,
+                              spreadRadius: 4,
+                              offset: const Offset(0, 3),
                             ),
+                          ],
+                        ),
+                        child: TextField(
+                          controller: _searchController,
+                          decoration: const InputDecoration(
+                            hintText: 'Search spare parts',
+                            prefixIcon: Icon(Icons.search, color: Colors.grey),
+                            border: InputBorder.none,
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 20, horizontal: 16),
                           ),
-                          const SizedBox(height: 20),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 2),
-                            child: SingleChildScrollView(
-                              scrollDirection: Axis.horizontal,
-                              child: Row(
-                                children: vehicles.map((vehicle) {
-                                  return VehicleTypeContainer(
-                                    backgroundImage:
-                                        vehicle["backgroundImage"]!,
-                                    title: vehicle["title"]!,
-                                    buttonText: "explore more >>",
-                                    onButtonPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              VehicleProductsPage(
-                                                  category:
-                                                      vehicle["vehicle type"]!),
-                                        ),
-                                      );
-                                    },
-                                  );
-                                }).toList(),
+                          onChanged: (query) {
+                            productProvider.searchProducts(query);
+                          },
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      Expanded(
+                        child: SingleChildScrollView(
+                          controller: _scrollController,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ReusableContainer(data: parsedData),
+                              const SizedBox(height: 25),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 16.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      'Vehicle Type',
+                                      style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        print("See all categories pressed");
+                                      },
+                                      child: const Text(
+                                        'See all',
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.blue),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                          ),
-                          const SizedBox(height: 20),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 16.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                const Text(
-                                  'Categories',
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    // Action for "See all"
-                                    print("See all categories pressed");
-                                  },
-                                  child: const Text(
-                                    'See all',
-                                    style: TextStyle(
-                                        fontSize: 14, color: Colors.blue),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: 16),
-                          SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              children: categories.map((category) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 8.0),
-                                  child: CircularCategory(
-                                    imagePath: category["image"]!,
-                                    name: category["name"]!,
-                                    onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              CategoryProductsPage(
-                                                  category: category["title"]!),
-                                        ),
+                              const SizedBox(height: 20),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 2),
+                                child: SingleChildScrollView(
+                                  scrollDirection: Axis.horizontal,
+                                  child: Row(
+                                    children: vehicles.map((vehicle) {
+                                      return VehicleTypeContainer(
+                                        backgroundImage:
+                                            vehicle["backgroundImage"]!,
+                                        title: vehicle["title"]!,
+                                        buttonText: "explore more >>",
+                                        onButtonPressed: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  VehicleProductsPage(
+                                                      category: vehicle[
+                                                          "vehicle type"]!),
+                                            ),
+                                          );
+                                        },
                                       );
-                                    },
+                                    }).toList(),
                                   ),
-                                );
-                              }).toList(),
-                            ),
-                          ),
-                          const SizedBox(height: 20),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: LayoutBuilder(
-                              builder: (context, constraints) {
-                                // Calculate width for two columns
-                                double itemWidth =
-                                    (constraints.maxWidth - 8) / 2;
-                                return Wrap(
-                                  spacing:
-                                      8.0, // Horizontal spacing between items
-                                  runSpacing:
-                                      8.0, // Vertical spacing between rows
-                                  children: products.map((product) {
-                                    return SizedBox(
-                                      width:
-                                          itemWidth, // Ensure two items fit per row
-                                      child: GestureDetector(
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 16.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      'Categories',
+                                      style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        print("See all categories pressed");
+                                      },
+                                      child: const Text(
+                                        'See all',
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.blue),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 16),
+                              SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Row(
+                                  children: categories.map((category) {
+                                    return Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8.0),
+                                      child: CircularCategory(
+                                        imagePath: category["image"]!,
+                                        name: category["name"]!,
                                         onTap: () {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
-                                                  ProductDetailsPage(
-                                                imageUrl: product[
-                                                    "imagePath"], // Pass product details
-                                                price: product["price"],
-                                                discount: product["discount"],
-                                                title: product["title"],
-                                                additionalImages: [
-                                                  product['imagePath']
-                                                ], //product.additionalImages
-                                                deliveryDate: 'Dec 12 - 26',
-                                              ),
+                                                  CategoryProductsPage(
+                                                      category:
+                                                          category["title"]!),
                                             ),
                                           );
                                         },
-                                        child: ProductCard(
-                                          product: product,
-                                        ),
                                       ),
                                     );
                                   }).toList(),
-                                );
-                              },
-                            ),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: LayoutBuilder(
+                                  builder: (context, constraints) {
+                                    double itemWidth =
+                                        (constraints.maxWidth - 8) / 2;
+                                    return Wrap(
+                                      spacing: 8.0,
+                                      runSpacing: 8.0,
+                                      children: products.map((product) {
+                                        return SizedBox(
+                                          width: itemWidth,
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      ProductDetailsPage(
+                                                    imageUrl:
+                                                        product["imagePath"],
+                                                    price: product["price"],
+                                                    discount:
+                                                        product["discount"],
+                                                    title: product["title"],
+                                                    additionalImages: [
+                                                      product['imagePath'],
+                                                      product['imagePath']
+                                                    ],
+                                                    deliveryDate: 'Dec 12 - 26',
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                            child: ProductCard(
+                                              product: product,
+                                            ),
+                                          ),
+                                        );
+                                      }).toList(),
+                                    );
+                                  },
+                                ),
+                              ),
+                              if (_isLoading)
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 20.0),
+                                  child: Center(
+                                      child: CircularProgressIndicator()),
+                                ),
+                              const SizedBox(height: 25),
+                            ],
                           ),
-                          const SizedBox(height: 25),
-                        ],
-                      ),
-                    ),
-                  )
-                ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
-            ),
-          ),
-        ],
-      );
-    }));
+            ],
+          );
+        },
+      ),
+    );
   }
 }
