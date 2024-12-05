@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:motolk/Components/Shop_navigation.dart';
+import 'package:motolk/Pages/Shop_Details.dart';
 import 'package:motolk/Providers/Shops_Data_Provider.dart';
 import 'package:provider/provider.dart';
 import '../Components/Home_Container.dart';
@@ -51,7 +53,7 @@ class _ShopsScreenState extends State<Shops> {
     return Scaffold(
       body: Consumer<ShopsDataProvider>(
         builder: (context, productProvider, child) {
-          final products = productProvider.filteredShop;
+          final shops = productProvider.filteredShop;
           final parsedData =
               Provider.of<AdvertismentDataProvider>(context, listen: false)
                   .parsedData;
@@ -230,33 +232,32 @@ class _ShopsScreenState extends State<Shops> {
                                     return Wrap(
                                       spacing: 8.0,
                                       runSpacing: 12.0,
-                                      children: products.map((products) {
+                                      children: shops.map((shops) {
                                         return SizedBox(
                                           width: itemWidth,
                                           child: GestureDetector(
                                             onTap: () {
-                                              // Navigator.push(
-                                              //   context,
-                                              //   MaterialPageRoute(
-                                              //     builder: (context) =>
-                                              //         ProductDetailsPage(
-                                              //       imageUrl:
-                                              //           product["imagePath"],
-                                              //       price: product["price"],
-                                              //       discount:
-                                              //           product["discount"],
-                                              //       title: product["title"],
-                                              //       additionalImages: [
-                                              //         product['imagePath'],
-                                              //         product['imagePath']
-                                              //       ],
-                                              //       deliveryDate: 'Dec 12 - 26',
-                                              //     ),
-                                              //   ),
-                                              // );
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      ShopPage(
+                                                    shopId: shops['shopId'],
+                                                    backgroundImage: shops[
+                                                        'backgroundImage'],
+                                                    title: shops['title'],
+                                                    rating: shops['rating'],
+                                                    mobileNumber:
+                                                        shops['mobileNumber'],
+                                                    email: shops['email'],
+                                                    googleMapLocation: shops[
+                                                        'googleMapLocation'],
+                                                  ),
+                                                ),
+                                              );
                                             },
                                             child: ReusableContainerforshop(
-                                                data: products),
+                                                data: shops),
                                           ),
                                         );
                                       }).toList(),
