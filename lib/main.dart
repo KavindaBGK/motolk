@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:motolk/Pages/Profile.dart';
+import 'package:motolk/Pages/Shops_.dart';
 import 'package:provider/provider.dart';
 import 'Pages/Home_Page.dart';
 import 'Providers/Advertisment_data.dart';
 import 'Providers/Catagory_Data.dart';
+import 'Providers/Mod_Change.dart';
 import 'Providers/Product_Data.dart';
+import 'Providers/Shops_Data_Provider.dart';
 import 'Providers/Vehical_Type.dart';
 import 'Providers/Vehicle_Brands.dart';
 import 'dart:ui'; // For the BackdropFilter
@@ -24,13 +27,23 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => VehicalBrandProvider()),
         ChangeNotifierProvider(create: (context) => CategoryProvider()),
         ChangeNotifierProvider(create: (context) => AdvertismentDataProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (context) => ShopsDataProvider()),
       ],
-      child: MaterialApp(
-        title: 'Multi Provider Example',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomePage(),
+      child: Consumer<ThemeProvider>(
+        // Use Consumer to listen to theme changes
+        builder: (context, themeProvider, _) {
+          return MaterialApp(
+            title: 'Multi Provider Example',
+            theme: themeProvider.isDarkMode
+                ? ThemeData.dark() // Dark theme
+                : ThemeData(
+                    primarySwatch:
+                        Colors.blue, // Light theme with blue primary color
+                  ),
+            home: HomePage(),
+          );
+        },
       ),
     );
   }
@@ -47,7 +60,7 @@ class HomePageState extends State<HomePage> {
   // Screens to navigate
   final List<Widget> screens = [
     HomeScreen(),
-    HomeScreen(),
+    Shops(),
     HomeScreen(),
     ProfileScreen(),
   ];
@@ -141,8 +154,9 @@ class HomePageState extends State<HomePage> {
 
   List<IconData> listOfIcons = [
     Icons.home_rounded,
-    Icons.favorite_rounded,
-    Icons.settings_rounded,
+    //Icons.favorite_rounded,
+    Icons.store_mall_directory_rounded,
+    Icons.shopping_cart_checkout_rounded,
     Icons.person_rounded,
   ];
 }

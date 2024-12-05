@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:motolk/Pages/Login.dart';
+import 'package:provider/provider.dart';
+
+import '../Providers/Mod_Change.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -19,6 +22,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
         title: Text('Profile', style: TextStyle(color: Colors.black)),
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.light_mode, color: Colors.black),
+            onPressed: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+            },
+          ),
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

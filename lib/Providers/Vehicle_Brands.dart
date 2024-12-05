@@ -137,4 +137,9 @@ class VehicalBrandProvider with ChangeNotifier {
   List<Map<String, dynamic>> get jsonBrandData {
     return List<Map<String, dynamic>>.from(json.decode(_jsonBrandData));
   }
+
+  List<String> getTypes() {
+    final jsonData = json.decode(_jsonBrandData) as List<dynamic>;
+    return jsonData.map((item) => item['type'] as String).toList();
+  }
 }
