@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:motolk/Pages/Cart.dart';
 import 'package:motolk/Pages/Profile.dart';
 import 'package:motolk/Pages/Shops_.dart';
+import 'package:motolk/Providers/Cart_Provider.dart';
 import 'package:provider/provider.dart';
 import 'Pages/Home_Page.dart';
 import 'Providers/Advertisment_data.dart';
@@ -11,9 +13,23 @@ import 'Providers/Shops_Data_Provider.dart';
 import 'Providers/Vehical_Type.dart';
 import 'Providers/Vehicle_Brands.dart';
 import 'dart:ui'; // For the BackdropFilter
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
-  runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyAtNczQHVHqzRgDck2bOjNvnSGUFgFj2VI",
+          authDomain: "chatmotolk.firebaseapp.com",
+          databaseURL:
+              "https://chatmotolk-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "chatmotolk",
+          storageBucket: "chatmotolk.firebasestorage.app",
+          messagingSenderId: "641002826476",
+          appId: "1:641002826476:web:52b89e6d90d3715f5613c9",
+          measurementId: "G-9T4W96GZS4"));
+  initializeDateFormatting().then((_) => runApp(MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -29,6 +45,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => AdvertismentDataProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (context) => ShopsDataProvider()),
+        ChangeNotifierProvider(create: (context) => CartProvider()),
       ],
       child: Consumer<ThemeProvider>(
         // Use Consumer to listen to theme changes
@@ -61,7 +78,7 @@ class HomePageState extends State<HomePage> {
   final List<Widget> screens = [
     HomeScreen(),
     Shops(),
-    HomeScreen(),
+    CartScreen(),
     ProfileScreen(),
   ];
 

@@ -1,0 +1,12 @@
+[
+    {
+      "id": "1",
+      "author": {
+        "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac"
+      },
+      "createdAt": 1637337600000,
+      "text": "Hello, this is a test message.",
+      "type": "text"
+    }
+  ]
+  

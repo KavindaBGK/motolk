@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "641002826476",
+    "firebase_url": "https://chatmotolk-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chatmotolk",
+    "storage_bucket": "chatmotolk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641002826476:android:91c774efde28c8955613c9",
+        "android_client_info": {
+          "package_name": "com.example.chatapk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6ku7-vqTkizeY7_Z9f-Id13qvy5487M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641002826476:android:537cabee743446175613c9",
+        "android_client_info": {
+          "package_name": "com.example.motolk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6ku7-vqTkizeY7_Z9f-Id13qvy5487M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

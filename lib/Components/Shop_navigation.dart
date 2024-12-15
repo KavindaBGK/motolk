@@ -2,6 +2,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:motolk/Pages/Shop_Details.dart';
 
+import '../Pages/Chata.dart';
+import '../Pages/Shop_Contact.dart';
 import '../Pages/Shop_Items.dart';
 
 class ShopPage extends StatefulWidget {
@@ -53,6 +55,16 @@ class ShopPageState extends State<ShopPage> {
         title: widget.title,
         rating: widget.rating,
       ),
+      ShopContactScreen(
+        shopId: widget.shopId,
+        backgroundImage: widget.backgroundImage,
+        title: widget.title,
+        rating: widget.rating,
+        mobileNumber: widget.mobileNumber,
+        email: widget.email,
+        googleMapLocation: widget.googleMapLocation,
+      ),
+      ChatPage(),
     ];
   }
 
@@ -143,6 +155,8 @@ class ShopPageState extends State<ShopPage> {
     //Icons.home_rounded,
     Icons.store_mall_directory_rounded,
     Icons.list_alt_outlined,
+    Icons.mobile_friendly_rounded,
+    Icons.chat_bubble_outline_rounded
     // Icons.shopping_cart_checkout_rounded,
     // Icons.person_rounded,
   ];

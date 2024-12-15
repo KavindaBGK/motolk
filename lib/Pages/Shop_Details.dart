@@ -431,8 +431,8 @@ class ShopDetailsScreen extends StatelessWidget {
                   return ListTile(
                     leading: Image.asset(
                       item['image'],
-                      height: 50,
-                      width: 50,
+                      height: 70,
+                      width: 70,
                       fit: BoxFit.cover,
                     ),
                     title: Text(item['title']),

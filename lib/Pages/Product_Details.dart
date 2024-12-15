@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../Components/Product_Card.dart';
+import '../Providers/Cart_Provider.dart';
 import '../Providers/Product_Data.dart'; // Add intl package for date formatting
 
 final List<Map<String, dynamic>> reviews = [
@@ -56,7 +57,7 @@ final storeDatan = {
 
 class ProductDetailsPage extends StatefulWidget {
   final String? imageUrl;
-  final String? price;
+  final String price;
   final String? discount;
   final String? title;
   final List<String> additionalImages;
@@ -602,22 +603,22 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 SizedBox(
                   height: 500,
                   child: Expanded(
-                    child: GridView.builder(
-                      padding: const EdgeInsets.all(8.0),
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, // Two items per row
-                        crossAxisSpacing: 8.0,
-                        mainAxisSpacing: 8.0,
-                        childAspectRatio: 0.9, // Adjust for item height
-                      ),
-                      itemCount: filteredProducts.length,
-                      itemBuilder: (context, index) {
-                        final product = filteredProducts[index];
-                        return ProductCard(product: product);
-                      },
+                      child: GridView.builder(
+                    padding: const EdgeInsets.all(8.0),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2, // Two items per row
+                      crossAxisSpacing: 8.0,
+                      mainAxisSpacing: 8.0,
+                      childAspectRatio: 0.9, // Adjust for item height
                     ),
-                  ),
+                    itemCount: filteredProducts.length,
+                    itemBuilder: (context, index) {
+                      final product = filteredProducts[index];
+                      return ProductCard(
+                          product: product); // No Expanded widget needed here
+                    },
+                  )),
                 )
               ],
             ),
@@ -667,7 +668,15 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                           ),
                         ),
                         onPressed: () {
-                          // Add to Cart action
+                          Provider.of<CartProvider>(context, listen: false)
+                              .addToCart(
+                            storeName: "New store",
+                            title: widget.title,
+                            price: double.parse(widget.price),
+                            oldPrice: double.parse(widget.price) + 1000,
+                            quantity: 1,
+                            image: widget.imageUrl,
+                          );
                         },
                         child: const Text(
                           "Add to Cart",

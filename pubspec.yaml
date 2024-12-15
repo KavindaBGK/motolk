@@ -41,6 +41,19 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   intl: ^0.20.1
   firebase_auth: ^5.3.3
+  file_picker: ^8.1.4
+  flutter_chat_types: ^3.6.2
+  flutter_chat_ui: ^1.6.15
+  http: ^1.2.2
+  image_picker: ^1.1.2
+  mime: ^2.0.0
+  open_filex: ^4.5.0
+  path_provider: ^2.1.5
+  uuid: ^4.5.1
+  cloud_firestore: ^5.5.1
+  firebase_core: ^3.8.1
+  bubble: ^1.2.1
+  socket_io_client: ^3.0.2
 
 dev_dependencies:
   flutter_test:
@@ -60,6 +73,7 @@ dev_dependencies:
 flutter:
   assets:
       - assets/images/
+      - assets/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
