@@ -245,6 +245,7 @@ class _ShopsScreenState extends State<Shops> {
                                                     shopId: shops['shopId'],
                                                     backgroundImage: shops[
                                                         'backgroundImage'],
+                                                    shopdp: shops['shopdp'],
                                                     title: shops['title'],
                                                     rating: shops['rating'],
                                                     mobileNumber:

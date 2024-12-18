@@ -9,6 +9,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP001',
       'backgroundImage': 'assets/images/Shop1.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'Auto Spares Hub',
       'subtitle': 'Your one-stop auto shop',
       'titleColor': Colors.white,
@@ -22,6 +23,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP002',
       'backgroundImage': 'assets/images/Shop2.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'SpareParts Central',
       'subtitle': 'Reliable parts, best prices',
       'titleColor': Colors.white,
@@ -35,6 +37,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP003',
       'backgroundImage': 'assets/images/Shop3.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'DriveSmart',
       'subtitle': 'Premium vehicle parts',
       'titleColor': Colors.white,
@@ -48,6 +51,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP004',
       'backgroundImage': 'assets/images/Shop4.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'MotorCare Essentials',
       'subtitle': 'Your car deserves the best',
       'titleColor': Colors.white,
@@ -61,6 +65,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP005',
       'backgroundImage': 'assets/images/Shop5.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'AutoTech Zone',
       'subtitle': 'Quality parts guaranteed',
       'titleColor': Colors.white,
@@ -74,6 +79,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP006',
       'backgroundImage': 'assets/images/Shop1.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'RoadMasters Parts',
       'subtitle': 'Keeping your wheels rolling',
       'titleColor': Colors.white,
@@ -87,6 +93,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP007',
       'backgroundImage': 'assets/images/Shop2.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'SpeedySpare Shop',
       'subtitle': 'Fast parts, faster delivery',
       'titleColor': Colors.white,
@@ -100,6 +107,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP008',
       'backgroundImage': 'assets/images/Shop3.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'ProParts Warehouse',
       'subtitle': 'Professional-grade auto spares',
       'titleColor': Colors.white,
@@ -113,6 +121,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP009',
       'backgroundImage': 'assets/images/Shop4.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'EcoDrive Parts',
       'subtitle': 'Eco-friendly vehicle solutions',
       'titleColor': Colors.white,
@@ -126,6 +135,7 @@ class ShopsDataProvider with ChangeNotifier {
     {
       'shopId': 'SHP010',
       'backgroundImage': 'assets/images/Shop5.jpg',
+      'shopdp': 'assets/images/Shop2.jpg',
       'title': 'AllAuto Spares',
       'subtitle': 'Wide range, best prices',
       'titleColor': Colors.white,

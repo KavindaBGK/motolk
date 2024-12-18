@@ -17,7 +17,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": false,
       "Brand": "Audi",
       "category": "Brakes",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -27,10 +28,11 @@ class ProductProvider with ChangeNotifier {
       "rating": 2.5,
       "cartCount": "",
       "isSale": true,
-      "discount": "-37%",
+      "discount": "37%",
       "Brand": "Ford",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -42,7 +44,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": false,
       "Brand": "Honda",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -52,10 +55,76 @@ class ProductProvider with ChangeNotifier {
       "rating": 4.0,
       "cartCount": "",
       "isSale": true,
-      "discount": "-60%",
+      "discount": "60%",
       "Brand": "Ford",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -67,7 +136,47 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Bus",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Cab",
+      "shopid": "SHP001"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -79,7 +188,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -91,7 +201,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -103,7 +214,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -115,7 +227,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -127,7 +240,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -139,7 +253,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -151,7 +266,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -163,7 +279,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP002"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -175,7 +292,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -187,7 +305,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -199,7 +318,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -211,7 +331,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -223,7 +344,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -235,7 +357,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -247,7 +370,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -259,7 +383,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -271,7 +396,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -283,7 +409,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -295,7 +422,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -307,7 +435,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -319,7 +448,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -331,7 +461,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -343,7 +474,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -355,103 +487,8 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Three-wheel"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Three-wheel"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Three-wheel"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Three-wheel"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Tractor"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Tractor"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Tractor"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Tractor"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
+      "vehicle type": "Heavy-Duty",
+      "shopid": "SHP005"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",

@@ -21,8 +21,11 @@ class ShopItemsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final filteredProducts =
-        Provider.of<ProductProvider>(context, listen: false).filteredProducts;
+    final productTypeProvider =
+        Provider.of<ProductProvider>(context, listen: false);
+    final filteredProducts = productTypeProvider.products
+        .where((product) => product['shopid'] == shopId)
+        .toList();
     return Scaffold(
         appBar: AppBar(
           title: Text(

@@ -220,36 +220,6 @@ class _ChatPageState extends State<ChatPage> {
     _addMessage(textMessage);
   }
 
-  // void _loadMessagesFromDatabase() async {
-  //   try {
-  //     final querySnapshot = await FirebaseFirestore.instance
-  //         .collection('messages')
-  //         .where('sender_id', isEqualTo: _user.id) // Filter by sender ID
-  //         .orderBy('timestamp', descending: true)
-  //         .get();
-
-  //     final messages = querySnapshot.docs.map((doc) {
-  //       final data = doc.data();
-  //       return types.TextMessage(
-  //         id: doc.id,
-  //         author: types.User(
-  //           id: data['sender_id'] ?? '',
-  //           firstName: data['sender_name'] ?? '',
-  //         ),
-  //         text: data['message'] ?? '',
-  //         createdAt:
-  //             (data['timestamp'] as Timestamp).toDate().millisecondsSinceEpoch,
-  //       );
-  //     }).toList();
-
-  //     setState(() {
-  //       _messages = messages;
-  //     });
-  //   } catch (error) {
-  //     print('Error loading messages: $error');
-  //   }
-  // }
-
   void _sortMessagesByTimestamp() {
     _messages.sort((a, b) {
       final aTimestamp = a.createdAt ?? 0; // Treat null as 0 (or large number)
@@ -294,39 +264,6 @@ class _ChatPageState extends State<ChatPage> {
       print("Disconnected from WebSocket");
     });
   }
-
-  // void _listenForFirestoreUpdates() {
-  //   print("call this fun");
-  //   FirebaseFirestore.instance
-  //       .collection('messages')
-  //       .where('receiver_id', isEqualTo: iduser)
-  //       .orderBy('timestamp', descending: true)
-  //       .snapshots()
-  //       .listen((snapshot) {
-  //     setState(() {
-  //       _messages = snapshot.docs.map((doc) {
-  //         final messageData = doc.data();
-  //         print("call this fun $messageData");
-  //         // Extract necessary fields from Firestore document
-  //         final messageText = messageData['message'];
-  //         final senderId = messageData['sender_id'];
-  //         final senderName = messageData['sender_name'];
-  //         final timestamp = messageData['timestamp'];
-
-  //         // Return a new TextMessage with the appropriate details
-  //         return types.TextMessage(
-  //           author:
-  //               types.User(id: senderId), // Set sender's ID and name as author
-  //           createdAt: timestamp?.millisecondsSinceEpoch ??
-  //               DateTime.now().millisecondsSinceEpoch,
-  //           id: doc.id,
-  //           text: messageText,
-  //         );
-  //       }).toList();
-  //     });
-  //   });
-  //   print("call this fun2");
-  // }
 
   void _loadMessagesFromDatabase() async {
     try {

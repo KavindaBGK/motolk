@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motolk/Pages/Checkout.dart';
 import 'package:motolk/Providers/Cart_Provider.dart';
 import 'package:provider/provider.dart';
 
@@ -233,7 +234,19 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              // Get selected items
+                              List selectedItems = _getSelectedItems(cartData);
+                              print(selectedItems);
+                              // Navigate to Checkout screen with selected items
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      CheckoutPage(cartItems: selectedItems),
+                                ),
+                              );
+                            },
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -307,5 +320,24 @@ class _CartScreenState extends State<CartScreen> {
     setState(() {
       _selectAll = allSelected;
     });
+  }
+
+  List _getSelectedItems(List cartData) {
+    List selectedItems = [];
+
+    for (int storeIndex = 0; storeIndex < cartData.length; storeIndex++) {
+      final store = cartData[storeIndex];
+      for (int itemIndex = 0; itemIndex < store['items'].length; itemIndex++) {
+        final item = store['items'][itemIndex];
+        String key = '$storeIndex-$itemIndex'; // Unique key for each item
+
+        // Add the item to selectedItems if it is selected
+        if (_selectedItems[key] == true) {
+          selectedItems.add(item); // Add item to selectedItems
+        }
+      }
+    }
+
+    return selectedItems;
   }
 }

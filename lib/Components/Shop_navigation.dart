@@ -9,6 +9,7 @@ import '../Pages/Shop_Items.dart';
 class ShopPage extends StatefulWidget {
   final String shopId;
   final String backgroundImage;
+  final String shopdp;
   final String title;
   final double rating;
   final String mobileNumber;
@@ -19,6 +20,7 @@ class ShopPage extends StatefulWidget {
     Key? key,
     required this.shopId,
     required this.backgroundImage,
+    required this.shopdp,
     required this.title,
     required this.rating,
     required this.mobileNumber,
@@ -43,6 +45,7 @@ class ShopPageState extends State<ShopPage> {
       ShopDetailsScreen(
         shopId: widget.shopId,
         backgroundImage: widget.backgroundImage,
+        shopdp:widget.shopdp,
         title: widget.title,
         rating: widget.rating,
         mobileNumber: widget.mobileNumber,
