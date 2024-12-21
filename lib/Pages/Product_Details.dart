@@ -2,42 +2,44 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:intl/intl.dart';
+import 'package:motolk/Providers/Reviews.dart';
+import 'package:motolk/Providers/Shops_Data_Provider.dart';
 import 'package:provider/provider.dart';
 
 import '../Components/Product_Card.dart';
 import '../Providers/Cart_Provider.dart';
 import '../Providers/Product_Data.dart'; // Add intl package for date formatting
 
-final List<Map<String, dynamic>> reviews = [
-  {
-    "rating": 5,
-    "review":
-        "Super recommend the purchase, low-cost smartwatch that delivers a lot, great build quality.",
-    "author": "E***s",
-    "date": "09 Nov 2024"
-  },
-  {
-    "rating": 4,
-    "review":
-        "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
-    "author": "Z***s",
-    "date": "09 Nov 2024"
-  },
-  {
-    "rating": 4,
-    "review":
-        "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
-    "author": "Z***s",
-    "date": "09 Nov 2024"
-  },
-  {
-    "rating": 4,
-    "review":
-        "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
-    "author": "Z***s",
-    "date": "09 Nov 2024"
-  }
-];
+// final List<Map<String, dynamic>> reviews = [
+//   {
+//     "rating": 5,
+//     "review":
+//         "Super recommend the purchase, low-cost smartwatch that delivers a lot, great build quality.",
+//     "author": "E***s",
+//     "date": "09 Nov 2024"
+//   },
+//   {
+//     "rating": 4,
+//     "review":
+//         "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
+//     "author": "Z***s",
+//     "date": "09 Nov 2024"
+//   },
+//   {
+//     "rating": 4,
+//     "review":
+//         "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
+//     "author": "Z***s",
+//     "date": "09 Nov 2024"
+//   },
+//   {
+//     "rating": 4,
+//     "review":
+//         "Amazing, it has what it promises, it delivers, it's comfortable, very good material.",
+//     "author": "Z***s",
+//     "date": "09 Nov 2024"
+//   }
+// ];
 final Map<String, dynamic> productData = {
   "description":
       "This is a high-quality product with excellent features. It is durable, reliable, and perfect for everyday use.",
@@ -50,10 +52,11 @@ final Map<String, dynamic> productData = {
 final storeDatan = {
   "name": "PENGAGAR Smart Watch Store",
   "badge": "Choice",
-  "positiveReviews": "87.2%",
   "soldByStore": "10,000+",
   "regularBuyers": "500+",
 };
+late double averageRating;
+late String shop;
 
 class ProductDetailsPage extends StatefulWidget {
   final String? imageUrl;
@@ -62,6 +65,8 @@ class ProductDetailsPage extends StatefulWidget {
   final String? title;
   final List<String> additionalImages;
   final String deliveryDate;
+  final String shopId;
+  final String delivary;
 
   const ProductDetailsPage({
     Key? key,
@@ -71,6 +76,8 @@ class ProductDetailsPage extends StatefulWidget {
     required this.title,
     required this.additionalImages,
     required this.deliveryDate,
+    required this.shopId,
+    required this.delivary,
   }) : super(key: key);
 
   @override
@@ -81,7 +88,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
   int currentIndex = 0;
   bool showAllReviews = false;
   String selectedMethod = "Card Payment";
-  double calculateAverageRating() {
+  double calculateAverageRating(List<Map<String, dynamic>> reviews) {
     if (reviews.isEmpty) return 0.0;
     final totalRating =
         reviews.fold(0.0, (sum, review) => sum + (review['rating'] ?? 0.0));
@@ -92,8 +99,13 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
   Widget build(BuildContext context) {
     final filteredProducts =
         Provider.of<ProductProvider>(context, listen: false).filteredProducts;
+    final reviews = Provider.of<ReviewsDataProvider>(context, listen: false)
+        .reviews
+        .where((reviews) => reviews['shopId'] == widget.shopId)
+        .toList();
+    shop = widget.shopId;
     final reviewsToShow = showAllReviews ? reviews : reviews.take(2).toList();
-    final averageRating = calculateAverageRating();
+    averageRating = calculateAverageRating(reviews);
 
     return Scaffold(
         appBar: AppBar(
@@ -261,130 +273,149 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // Card Payment Option
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            selectedMethod = "Card Payment";
-                          });
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 16, horizontal: 12),
-                          decoration: BoxDecoration(
-                            color: selectedMethod == "Card Payment"
-                                ? Colors.orange.withOpacity(0.1)
-                                : Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
+                      if (widget.delivary == 'available') ...[
+                        // Card Payment Option
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedMethod = "Card Payment";
+                            });
+                          },
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 12),
+                            decoration: BoxDecoration(
                               color: selectedMethod == "Card Payment"
-                                  ? Colors.orange
-                                  : Colors.grey.shade300,
-                              width: 1.5,
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.credit_card,
+                                  ? Colors.orange.withOpacity(0.1)
+                                  : Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
                                 color: selectedMethod == "Card Payment"
                                     ? Colors.orange
-                                    : Colors.grey,
+                                    : Colors.grey.shade300,
+                                width: 1.5,
                               ),
-                              const SizedBox(width: 12),
-                              const Text(
-                                "Card Payment",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.credit_card,
+                                  color: selectedMethod == "Card Payment"
+                                      ? Colors.orange
+                                      : Colors.grey,
                                 ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                      // Cash on Delivery Option
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            selectedMethod = "Cash on Delivery";
-                          });
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 16, horizontal: 12),
-                          decoration: BoxDecoration(
-                            color: selectedMethod == "Cash on Delivery"
-                                ? Colors.orange.withOpacity(0.1)
-                                : Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
-                              color: selectedMethod == "Cash on Delivery"
-                                  ? Colors.orange
-                                  : Colors.grey.shade300,
-                              width: 1.5,
+                                const SizedBox(width: 12),
+                                const Text(
+                                  "Card Payment",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.local_shipping,
+                        ),
+                        const SizedBox(height: 16),
+                        // Cash on Delivery Option
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedMethod = "Cash on Delivery";
+                            });
+                          },
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 12),
+                            decoration: BoxDecoration(
+                              color: selectedMethod == "Cash on Delivery"
+                                  ? Colors.orange.withOpacity(0.1)
+                                  : Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(
                                 color: selectedMethod == "Cash on Delivery"
                                     ? Colors.orange
-                                    : Colors.grey,
+                                    : Colors.grey.shade300,
+                                width: 1.5,
                               ),
-                              const SizedBox(width: 12),
-                              const Text(
-                                "Cash on Delivery",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w500,
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.local_shipping,
+                                  color: selectedMethod == "Cash on Delivery"
+                                      ? Colors.orange
+                                      : Colors.grey,
                                 ),
-                              ),
-                            ],
+                                const SizedBox(width: 12),
+                                const Text(
+                                  "Cash on Delivery",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
+                      ] else ...[
+                        Container(
+                          padding: const EdgeInsets.all(16.0),
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Text(
+                            "Delivery not available in your area.",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.red,
+                            ),
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),
                 // Delivery date
-
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 16.0, vertical: 8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      const Icon(Icons.local_shipping,
-                          color: Colors.orange), // Delivery icon
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            "Estimated Delivery",
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                if (widget.delivary == 'available') ...[
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0, vertical: 8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Icon(Icons.local_shipping,
+                            color: Colors.orange), // Delivery icon
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "Estimated Delivery",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
                             ),
-                          ),
-                          Text(
-                            "${DateFormat('MMM d').format(DateTime.now())} - ${DateFormat('MMM d').format(DateTime.now().add(Duration(days: 5)))}",
-                            style: const TextStyle(
-                              fontSize: 14,
-                              color: Colors.grey,
+                            Text(
+                              "${DateFormat('MMM d').format(DateTime.now())} - ${DateFormat('MMM d').format(DateTime.now().add(Duration(days: 5)))}",
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
+                ],
+
                 const SizedBox(
                   height: 15,
                 ),
@@ -635,26 +666,102 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 child: Row(
                   children: [
                     // "Buy Now" button
-                    Expanded(
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orange,
-                          foregroundColor: Colors.white, // Text color
-                          padding: const EdgeInsets.symmetric(vertical: 12.0),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
+                    if (widget.delivary == 'available') ...[
+                      Expanded(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.orange,
+                            foregroundColor: Colors.white, // Text color
+                            padding: const EdgeInsets.symmetric(vertical: 12.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          onPressed: () {
+                            // Buy Now action
+                          },
+                          child: const Text(
+                            "Buy Now",
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
                           ),
                         ),
-                        onPressed: () {
-                          // Buy Now action
-                        },
-                        child: const Text(
-                          "Buy Now",
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ] else ...[
+                      Expanded(
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.orange,
+                            foregroundColor: Colors.white, // Text color
+                            padding: const EdgeInsets.symmetric(vertical: 12.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          onPressed: () {
+                            showModalBottomSheet(
+                              context: context,
+                              shape: const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.vertical(
+                                    top: Radius.circular(16)),
+                              ),
+                              builder: (BuildContext context) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        "Seller Contact",
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 16),
+                                      Row(
+                                        children: [
+                                          const Icon(Icons.phone,
+                                              color: Colors.orange),
+                                          const SizedBox(width: 12),
+                                          const Text(
+                                            "+1 123 456 7890", // Replace with dynamic seller contact number
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 24),
+                                      ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.orange,
+                                          foregroundColor: Colors.white,
+                                        ),
+                                        onPressed: () {
+                                          Navigator.pop(
+                                              context); // Close the bottom sheet
+                                        },
+                                        child: const Text("Close"),
+                                      ),
+                                    ],
+                                  ),
+                                );
+                              },
+                            );
+                          },
+                          child: const Text(
+                            "Contact Seller",
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
-                    ),
+                    ],
+
                     const SizedBox(width: 16),
                     // "Add to Cart" button
                     Expanded(
@@ -702,6 +809,10 @@ class StoreInfoComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final parsedData = Provider.of<ShopsDataProvider>(context, listen: false)
+        .products
+        .where((products) => products['shopId'] == shop)
+        .toList();
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -732,7 +843,7 @@ class StoreInfoComponent extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   Text(
-                    storeData["name"],
+                    parsedData[0]['title'],
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -763,7 +874,7 @@ class StoreInfoComponent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               _buildStatisticItem(
-                value: storeData["positiveReviews"],
+                value: (averageRating / 5 * 100).toString(),
                 label: "positive reviews",
               ),
               _buildStatisticItem(
@@ -785,7 +896,7 @@ class StoreInfoComponent extends StatelessWidget {
     return Column(
       children: [
         Text(
-          value,
+          '${value}%',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,

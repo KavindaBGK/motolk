@@ -152,6 +152,8 @@ class ShopItemsScreen extends StatelessWidget {
                                       title: product["title"],
                                       additionalImages: [product['imagePath']],
                                       deliveryDate: 'Dec 12 - 26',
+                                      shopId: product['shopid'],
+                                      delivary: product['delivary'],
                                     ),
                                   ),
                                 );

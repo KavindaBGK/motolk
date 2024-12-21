@@ -3,6 +3,7 @@ import 'package:motolk/Pages/Cart.dart';
 import 'package:motolk/Pages/Profile.dart';
 import 'package:motolk/Pages/Shops_.dart';
 import 'package:motolk/Providers/Cart_Provider.dart';
+import 'package:motolk/Providers/Reviews.dart';
 import 'package:provider/provider.dart';
 import 'Pages/Home_Page.dart';
 import 'Providers/Advertisment_data.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (context) => ShopsDataProvider()),
         ChangeNotifierProvider(create: (context) => CartProvider()),
+        ChangeNotifierProvider(create: (context) => ReviewsDataProvider()),
       ],
       child: Consumer<ThemeProvider>(
         // Use Consumer to listen to theme changes

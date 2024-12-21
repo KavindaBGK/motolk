@@ -302,6 +302,8 @@ class _VehicleProductsPageState extends State<VehicleProductsPage> {
                                   product['imagePath']
                                 ], //product.additionalImages
                                 deliveryDate: 'Dec 12 - 26',
+                                shopId: product['shopid'],
+                                delivary: product['delivary'],
                               ),
                             ),
                           );

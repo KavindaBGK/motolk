@@ -18,7 +18,8 @@ class ProductProvider with ChangeNotifier {
       "Brand": "Audi",
       "category": "Brakes",
       "vehicle type": "Car",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -32,7 +33,8 @@ class ProductProvider with ChangeNotifier {
       "Brand": "Ford",
       "category": "Body Parts",
       "vehicle type": "Car",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -45,7 +47,8 @@ class ProductProvider with ChangeNotifier {
       "Brand": "Honda",
       "category": "Body Parts",
       "vehicle type": "Car",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -59,7 +62,8 @@ class ProductProvider with ChangeNotifier {
       "Brand": "Ford",
       "category": "Body Parts",
       "vehicle type": "Car",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -72,7 +76,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Van",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -85,7 +90,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Van",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -98,7 +104,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Van",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -111,7 +118,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Van",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "unavailable"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -124,7 +132,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Bus",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -137,7 +146,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Bus",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -150,7 +160,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Bus",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -163,7 +174,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Bus",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -176,7 +188,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "60%",
       "category": "Body Parts",
       "vehicle type": "Cab",
-      "shopid": "SHP001"
+      "shopid": "SHP001",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -189,7 +202,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Cab",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -202,7 +216,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Cab",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -215,7 +230,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Cab",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -228,7 +244,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tipper",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -241,7 +258,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tipper",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -254,7 +272,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tipper",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -267,7 +286,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tipper",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -280,7 +300,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "SUV",
-      "shopid": "SHP002"
+      "shopid": "SHP002",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -293,7 +314,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "SUV",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -306,7 +328,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "SUV",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -319,7 +342,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "SUV",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -332,7 +356,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Lorry",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -345,7 +370,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Lorry",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -358,7 +384,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Lorry",
-      "shopid": "SHP003"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -371,33 +398,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Lorry",
-      "shopid": "SHP003"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Three-wheel",
-      "shopid": "SHP004"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Three-wheel",
-      "shopid": "SHP004"
+      "shopid": "SHP003",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -411,6 +413,7 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
       "shopid": "SHP004",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -423,7 +426,36 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
-      "shopid": "SHP004"
+      "shopid": "SHP004",
+      "delivary" : "available"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "-60%",
+      "category": "Body Parts",
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary" : "available"
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "-60%",
+      "category": "Body Parts",
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -436,7 +468,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tractor",
-      "shopid": "SHP005"
+      "shopid": "SHP005",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -449,7 +482,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tractor",
-      "shopid": "SHP005"
+      "shopid": "SHP005",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -462,7 +496,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tractor",
-      "shopid": "SHP005"
+      "shopid": "SHP005",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -475,7 +510,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Tractor",
-      "shopid": "SHP005"
+      "shopid": "SHP005",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -488,7 +524,8 @@ class ProductProvider with ChangeNotifier {
       "discount": "-60%",
       "category": "Body Parts",
       "vehicle type": "Heavy-Duty",
-      "shopid": "SHP005"
+      "shopid": "SHP005",
+      "delivary" : "available"
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",

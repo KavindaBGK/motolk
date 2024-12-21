@@ -290,6 +290,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       product['imagePath']
                                                     ],
                                                     deliveryDate: 'Dec 12 - 26',
+                                                    shopId: product['shopid'],
+                                                    delivary: product['delivary'],
                                                   ),
                                                 ),
                                               );

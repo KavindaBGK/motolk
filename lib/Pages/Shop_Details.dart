@@ -199,6 +199,8 @@ class ShopDetailsScreen extends StatelessWidget {
                                         product[0]['imagePath']
                                       ],
                                       deliveryDate: 'Dec 12 - 26',
+                                      shopId: product[0]['shopid'],
+                                      delivary: product[0]['delivary'],
                                     ),
                                   ),
                                 );
@@ -290,6 +292,8 @@ class ShopDetailsScreen extends StatelessWidget {
                                               item['imagePath']
                                             ],
                                             deliveryDate: 'Dec 12 - 26',
+                                            shopId: item['shopid'],
+                                            delivary: item['delivary'],
                                           ),
                                         ),
                                       );
@@ -401,6 +405,8 @@ class ShopDetailsScreen extends StatelessWidget {
                                 title: item["title"],
                                 additionalImages: [item['imagePath']],
                                 deliveryDate: 'Dec 12 - 26',
+                                shopId: item['shopid'],
+                                delivary: item['delivary'],
                               ),
                             ),
                           );
@@ -494,6 +500,8 @@ class ShopDetailsScreen extends StatelessWidget {
                             title: item["title"],
                             additionalImages: [item['imagePath']],
                             deliveryDate: 'Dec 12 - 26',
+                            shopId: item['shopid'],
+                            delivary: item['delivary'],
                           ),
                         ),
                       );
