@@ -285,13 +285,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     discount:
                                                         product["discount"],
                                                     title: product["title"],
-                                                    additionalImages: [
-                                                      product['imagePath'],
-                                                      product['imagePath']
-                                                    ],
+                                                    additionalImages: product["additionalImages"],
                                                     deliveryDate: 'Dec 12 - 26',
                                                     shopId: product['shopid'],
                                                     delivary: product['delivary'],
+                                                    description: product['description'],
                                                   ),
                                                 ),
                                               );

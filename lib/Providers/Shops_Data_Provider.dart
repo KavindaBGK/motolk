@@ -19,6 +19,11 @@ class ShopsDataProvider with ChangeNotifier {
       'mobileNumber': '+1234567890',
       'email': 'contact@autospareshub.com',
       'googleMapLocation': 'https://goo.gl/maps/example1',
+      'address':'',
+      'Vision':'',
+      'Mission':'',
+      'services':[],
+      
     },
     {
       'shopId': 'SHP002',

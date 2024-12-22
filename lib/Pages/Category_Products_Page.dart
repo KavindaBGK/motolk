@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:motolk/Pages/Product_Details.dart';
 import 'package:provider/provider.dart';
 import '../Providers/Product_Data.dart';
 import '../Components/Product_Card.dart';
@@ -95,7 +96,32 @@ class CategoryProductsPage extends StatelessWidget {
                     itemCount: filteredProducts.length,
                     itemBuilder: (context, index) {
                       final product = filteredProducts[index];
-                      return ProductCard(product: product);
+                       return GestureDetector(
+                        onTap: () {
+                          // Handle single tap on the product card
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ProductDetailsPage(
+                                imageUrl: product[
+                                    "imagePath"], // Pass product details
+                                price: product["price"],
+                                discount: product["discount"],
+                                title: product["title"],
+                                additionalImages: [
+                                  product['imagePath']
+                                ], //product.additionalImages
+                                deliveryDate: 'Dec 12 - 26',
+                                shopId: product['shopid'],
+                                delivary: product['delivary'],
+                                description: product['description'],
+                              ),
+                            ),
+                          );
+                        },
+                        child: ProductCard(product: product),
+                      );
+                     
                     },
                   ),
           ),

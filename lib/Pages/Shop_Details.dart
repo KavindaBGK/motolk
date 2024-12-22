@@ -201,6 +201,7 @@ class ShopDetailsScreen extends StatelessWidget {
                                       deliveryDate: 'Dec 12 - 26',
                                       shopId: product[0]['shopid'],
                                       delivary: product[0]['delivary'],
+                                      description: product[0]['description'],
                                     ),
                                   ),
                                 );
@@ -294,6 +295,7 @@ class ShopDetailsScreen extends StatelessWidget {
                                             deliveryDate: 'Dec 12 - 26',
                                             shopId: item['shopid'],
                                             delivary: item['delivary'],
+                                            description: item['description'],
                                           ),
                                         ),
                                       );
@@ -407,6 +409,7 @@ class ShopDetailsScreen extends StatelessWidget {
                                 deliveryDate: 'Dec 12 - 26',
                                 shopId: item['shopid'],
                                 delivary: item['delivary'],
+                                description: item['description'],
                               ),
                             ),
                           );
@@ -502,6 +505,7 @@ class ShopDetailsScreen extends StatelessWidget {
                             deliveryDate: 'Dec 12 - 26',
                             shopId: item['shopid'],
                             delivary: item['delivary'],
+                            description: item['description'],
                           ),
                         ),
                       );

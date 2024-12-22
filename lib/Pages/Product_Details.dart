@@ -40,14 +40,14 @@ import '../Providers/Product_Data.dart'; // Add intl package for date formatting
 //     "date": "09 Nov 2024"
 //   }
 // ];
-final Map<String, dynamic> productData = {
-  "description":
-      "This is a high-quality product with excellent features. It is durable, reliable, and perfect for everyday use.",
-  "images": [
-    "assets/images/engin.jpg", // Replace with actual image URLs
-    "assets/images/Clutch.jpg"
-  ]
-};
+// final Map<String, dynamic> productData = {
+//   "description":
+//       "This is a high-quality product with excellent features. It is durable, reliable, and perfect for everyday use.",
+//   "images": [
+//     "assets/images/engin.jpg", // Replace with actual image URLs
+//     "assets/images/Clutch.jpg"
+//   ]
+// };
 
 final storeDatan = {
   "name": "PENGAGAR Smart Watch Store",
@@ -67,6 +67,7 @@ class ProductDetailsPage extends StatefulWidget {
   final String deliveryDate;
   final String shopId;
   final String delivary;
+  final String description;
 
   const ProductDetailsPage({
     Key? key,
@@ -78,6 +79,7 @@ class ProductDetailsPage extends StatefulWidget {
     required this.deliveryDate,
     required this.shopId,
     required this.delivary,
+    required this.description,
   }) : super(key: key);
 
   @override
@@ -588,7 +590,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        productData["description"],
+                        widget.description,
                         style: const TextStyle(
                           fontSize: 16,
                           color: Colors.grey,
@@ -609,7 +611,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: List.generate(
-                          productData["images"].length,
+                          widget.additionalImages.length,
                           (index) => Container(
                             width: 120,
                             height: 120,
@@ -620,7 +622,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8),
                               child: Image.asset(
-                                productData["images"][index],
+                                widget.additionalImages[index],
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -633,23 +635,45 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                 StoreInfoComponent(storeData: storeDatan),
                 SizedBox(
                   height: 500,
-                  child: Expanded(
-                      child: GridView.builder(
-                    padding: const EdgeInsets.all(8.0),
+                  child: GridView.builder(
+                    padding: const EdgeInsets.all(16.0),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2, // Two items per row
+                      crossAxisCount: 2,
                       crossAxisSpacing: 8.0,
                       mainAxisSpacing: 8.0,
-                      childAspectRatio: 0.9, // Adjust for item height
+                      childAspectRatio: 0.75,
                     ),
                     itemCount: filteredProducts.length,
                     itemBuilder: (context, index) {
                       final product = filteredProducts[index];
-                      return ProductCard(
-                          product: product); // No Expanded widget needed here
+                      return GestureDetector(
+                        onTap: () {
+                          // Handle single tap on the product card
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ProductDetailsPage(
+                                imageUrl: product[
+                                    "imagePath"], // Pass product details
+                                price: product["price"],
+                                discount: product["discount"],
+                                title: product["title"],
+                                additionalImages: [
+                                  product['imagePath']
+                                ], //product.additionalImages
+                                deliveryDate: 'Dec 12 - 26',
+                                shopId: product['shopid'],
+                                delivary: product['delivary'],
+                                description: product['description'],
+                              ),
+                            ),
+                          );
+                        },
+                        child: ProductCard(product: product),
+                      );
                     },
-                  )),
+                  ),
                 )
               ],
             ),

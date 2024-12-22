@@ -19,7 +19,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Brakes",
       "vehicle type": "Car",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -34,7 +41,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Car",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -48,7 +62,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Car",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -63,7 +84,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Car",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -77,7 +105,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Van",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -91,7 +126,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Van",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -105,7 +147,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Van",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -119,7 +168,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Van",
       "shopid": "SHP001",
-      "delivary" : "unavailable"
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -133,7 +189,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Bus",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -147,7 +210,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Bus",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -161,7 +231,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Bus",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -175,7 +252,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Bus",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -189,7 +273,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Cab",
       "shopid": "SHP001",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -203,7 +294,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Cab",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -217,7 +315,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Cab",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -231,7 +336,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Cab",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -245,7 +357,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tipper",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -259,7 +378,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tipper",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -273,7 +399,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tipper",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -287,7 +420,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tipper",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -301,7 +441,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "SUV",
       "shopid": "SHP002",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -315,7 +462,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "SUV",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -329,7 +483,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "SUV",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -343,7 +504,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "SUV",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -357,7 +525,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Lorry",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -371,7 +546,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Lorry",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -385,7 +567,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Lorry",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -399,7 +588,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Lorry",
       "shopid": "SHP003",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -413,7 +609,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
       "shopid": "SHP004",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -427,7 +630,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
       "shopid": "SHP004",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -441,7 +651,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
       "shopid": "SHP004",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -455,7 +672,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Three-wheel",
       "shopid": "SHP004",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -469,7 +693,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tractor",
       "shopid": "SHP005",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -483,7 +714,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tractor",
       "shopid": "SHP005",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -497,7 +735,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tractor",
       "shopid": "SHP005",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -511,7 +756,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Tractor",
       "shopid": "SHP005",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -525,7 +777,14 @@ class ProductProvider with ChangeNotifier {
       "category": "Body Parts",
       "vehicle type": "Heavy-Duty",
       "shopid": "SHP005",
-      "delivary" : "available"
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -537,7 +796,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -549,7 +815,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -561,7 +834,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -573,7 +853,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Motorcycle"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -585,7 +872,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Motorcycle"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -597,7 +891,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Motorcycle"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -609,7 +910,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Motorcycle"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -622,7 +930,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": false,
       "Brand": "Audi",
       "category": "Brakes",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -632,10 +949,19 @@ class ProductProvider with ChangeNotifier {
       "rating": 2.5,
       "cartCount": "",
       "isSale": true,
-      "discount": "-37%",
+      "discount": "37%",
       "Brand": "Ford",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -647,7 +973,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": false,
       "Brand": "Honda",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -657,10 +992,124 @@ class ProductProvider with ChangeNotifier {
       "rating": 4.0,
       "cartCount": "",
       "isSale": true,
-      "discount": "-60%",
+      "discount": "60%",
       "Brand": "Ford",
       "category": "Body Parts",
-      "vehicle type": "Car"
+      "vehicle type": "Car",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Van",
+      "shopid": "SHP001",
+      "delivary": "unavailable",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -672,7 +1121,79 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Bus",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Bus",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
+    },
+    {
+      "imagePath": "assets/images/bodyparts.jpg",
+      "title": "FORD injector nozzle(delphi)...",
+      "price": "11,306.88",
+      "sold": "148 sold",
+      "rating": 4.0,
+      "cartCount": "",
+      "isSale": true,
+      "discount": "60%",
+      "category": "Body Parts",
+      "vehicle type": "Cab",
+      "shopid": "SHP001",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -684,7 +1205,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -696,7 +1226,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -708,7 +1247,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Van"
+      "vehicle type": "Cab",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -720,7 +1268,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -732,7 +1289,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -744,7 +1310,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -756,7 +1331,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Bus"
+      "vehicle type": "Tipper",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -768,7 +1352,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP002",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -780,7 +1373,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -792,7 +1394,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -804,7 +1415,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Cab"
+      "vehicle type": "SUV",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -816,7 +1436,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -828,7 +1457,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -840,7 +1478,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -852,7 +1499,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tipper"
+      "vehicle type": "Lorry",
+      "shopid": "SHP003",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -864,7 +1520,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -876,7 +1541,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -888,7 +1562,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -900,7 +1583,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "SUV"
+      "vehicle type": "Three-wheel",
+      "shopid": "SHP004",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -912,7 +1604,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -924,7 +1625,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -936,7 +1646,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -948,7 +1667,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Lorry"
+      "vehicle type": "Tractor",
+      "shopid": "SHP005",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -960,7 +1688,16 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Three-wheel"
+      "vehicle type": "Heavy-Duty",
+      "shopid": "SHP005",
+      "delivary": "available",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -972,7 +1709,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Three-wheel"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -984,7 +1728,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Three-wheel"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -996,7 +1747,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Three-wheel"
+      "vehicle type": "Heavy-Duty",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -1008,7 +1766,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tractor"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -1020,7 +1785,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tractor"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -1032,7 +1804,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tractor"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
     {
       "imagePath": "assets/images/bodyparts.jpg",
@@ -1044,103 +1823,14 @@ class ProductProvider with ChangeNotifier {
       "isSale": true,
       "discount": "-60%",
       "category": "Body Parts",
-      "vehicle type": "Tractor"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Heavy-Duty"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Motorcycle"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Motorcycle"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Motorcycle"
-    },
-    {
-      "imagePath": "assets/images/bodyparts.jpg",
-      "title": "FORD injector nozzle(delphi)...",
-      "price": "11,306.88",
-      "sold": "148 sold",
-      "rating": 4.0,
-      "cartCount": "",
-      "isSale": true,
-      "discount": "-60%",
-      "category": "Body Parts",
-      "vehicle type": "Motorcycle"
+      "vehicle type": "Motorcycle",
+      "description":
+          "The Audi A4 Evaporator by Nissens is a high-quality HVAC component designed to ensure efficient cooling performance. Built with durable materials, it facilitates the proper heat exchange process, removing moisture and cooling air for a comfortable cabin environment. Engineered for reliability and compatibility with Audi A4 models, this evaporator meets stringent standards for optimal functionality and long-lasting performance.",
+      "additionalImages": [
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg",
+        "assets/images/bodyparts.jpg"
+      ]
     },
   ];
   List<Map<String, dynamic>> _products = [];

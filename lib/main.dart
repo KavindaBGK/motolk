@@ -16,6 +16,7 @@ import 'Providers/Vehicle_Brands.dart';
 import 'dart:ui'; // For the BackdropFilter
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -60,7 +61,21 @@ class MyApp extends StatelessWidget {
                     primarySwatch:
                         Colors.blue, // Light theme with blue primary color
                   ),
-            home: HomePage(),
+            home: AnimatedSplashScreen(
+              duration: 5000,
+              splash: Center(
+                child: Container(
+                  margin: EdgeInsets.only(
+                      right: 0.0, left: 5.0), // Adds 10px margin to the right
+                  child: Image.asset('assets/images/compantlogo.png'),
+                ),
+              ),
+              splashIconSize: 650,
+              nextScreen: HomePage(),
+              splashTransition: SplashTransition.fadeTransition,
+              backgroundColor: Colors.white,
+            ),
+            // home: HomePage(),
           );
         },
       ),

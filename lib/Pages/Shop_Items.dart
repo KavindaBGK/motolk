@@ -154,6 +154,7 @@ class ShopItemsScreen extends StatelessWidget {
                                       deliveryDate: 'Dec 12 - 26',
                                       shopId: product['shopid'],
                                       delivary: product['delivary'],
+                                      description: product['description'],
                                     ),
                                   ),
                                 );

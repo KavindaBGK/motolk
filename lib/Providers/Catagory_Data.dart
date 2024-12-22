@@ -54,56 +54,55 @@ class CategoryProvider with ChangeNotifier {
       "title": "Filters"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/fuel_supply.jpg",
       "name": "Fuel Supply\nSystem",
       "title": "Fuel Supply System"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/fuel_mixture.jpg",
       "name": "Fuel Mixture\nFormation",
       "title": "Fuel Mixture Formation"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/interior.jpg",
       "name": "Interior\nEquipment",
       "title": "Interior Equipment"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/heating_eq.jpg",
       "name": "Heating &\nVentilation",
       "title": "Heating & Ventilation"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/maintain.jpg",
       "name": "Maintenance\nService Parts",
       "title": "Maintenance Service Parts"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/suspension.jpg",
       "name": "Suspension &\nDamping",
       "title": "Suspension & Damping"
     },
+  
     {
-      "image": "assets/images/en.jpg",
-      "name": "Suspension &\nSteering",
-      "title": "Suspension & Steering"
-    },
-    {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/transmission.jpg",
       "name": "Transmission\n",
       "title": "Transmission"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/spark.jpg",
       "name": "Spark/Glow\nIgnition",
       "title": "Spark/Glow Ignition"
     },
     {
-      "image": "assets/images/en.jpg",
+      "image": "assets/images/window.jpeg",
       "name": "Window\nCleaning",
       "title": "Window Cleaning"
     },
-    {"image": "assets/images/en.jpg", "name": "Others\n", "title": "Others"},
+    { 
+      "image": "assets/images/en.jpg", 
+      "name": "Others\n", 
+      "title": "Others"},
   ];
 
   // Getter function to return the list of categories
